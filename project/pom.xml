@@ -4,8 +4,8 @@
 
   <groupId>tiir.ifi</groupId>
   <artifactId>project</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <version>0.0.2-SNAPSHOT</version>
+  <packaging>war</packaging>
 
   <name>project</name>
   <url>http://maven.apache.org</url>
@@ -27,7 +27,13 @@
 	<dependency>
 	    <groupId>mysql</groupId>
 	    <artifactId>mysql-connector-java</artifactId>
-	    </dependency>
+	</dependency>
+
+	<dependency>
+	  <groupId>org.springframework.boot</groupId>
+	  <artifactId>spring-boot-starter-tomcat</artifactId>
+	  <scope>provided</scope>
+	</dependency>
     
     <dependency>
     	<groupId>org.springframework.boot</groupId>
@@ -46,10 +52,11 @@
   
   <build>
   	<plugins>
-  		<plugin>
+<!--  		<plugin>
   			<groupId>org.springframework.boot</groupId>
   			<artifactId>spring-boot-maven-plugin</artifactId>
-  		</plugin>
+  		      </plugin>
+		      -->
   	</plugins>
   </build>
 </project>
