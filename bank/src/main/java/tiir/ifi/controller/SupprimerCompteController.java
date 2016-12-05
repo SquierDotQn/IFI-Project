@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import tiir.ifi.bean.Compte;
-import tiir.ifi.IServiceComptes;
+import tiir.ifi.services.IServiceComptes;
 
 @Controller
 public class SupprimerCompteController {

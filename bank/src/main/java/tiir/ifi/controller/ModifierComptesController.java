@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.developpez.rpouiller.bean.Compte;
-import com.developpez.rpouiller.services.IServiceComptes;
+import tiir.ifi.bean.Compte;
+import tiir.ifi.services.IServiceComptes;
 
 @Controller
 public class ModifierComptesController {

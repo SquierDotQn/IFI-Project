@@ -15,7 +15,7 @@ public class ServiceComptes implements IServiceComptes {
     private IComptesDAO dao;
 
     @Transactional(readOnly=true)
-    public List<Comptes> listerComptes() {
+    public List<Compte> listerComptes() {
         return dao.listerComptes();
     }
     
@@ -37,9 +37,10 @@ public class ServiceComptes implements IServiceComptes {
     }
     
     @Transactional
-    public void modifierComptes(final List<Comptes> pListeComptes) {
+    public void modifierComptes(final List<Compte> pListeComptes) {
         for (final Compte lCompte : pListeComptes) {
             dao.modifierCompte(lCompte);
         }
     }
+
 }
